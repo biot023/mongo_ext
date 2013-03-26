@@ -1,7 +1,2 @@
 require "b23/mongo_ext/version"
-
-module B23
-  module MongoExt
-    
-  end
-end
+require "b23/mongo_ext/active_collection"

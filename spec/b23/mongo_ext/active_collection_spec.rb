@@ -1,7 +1,7 @@
 require "rspec"
 $: << File.join( File.dirname( __FILE__ ), "..", "..", "..", "lib" )
 
-require "b23/mongo_ext/active_collection"
+require "b23/mongo_ext"
 
 describe B23::MongoExt::ActiveCollection, "construction" do
   

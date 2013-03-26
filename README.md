@@ -1,24 +1,25 @@
-# B23/mongoExt
+# mongoExt
 
-TODO: Write a gem description
+
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'b23/mongo_ext'
+    gem "mongo_ext", :git => "git@github.com:biot023/mongo_ext.git"
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install b23/mongo_ext
-
 ## Usage
 
-TODO: Write usage instructions here
+require "b23/mongo_ext"
+
+Really simple wrappers over collections, allowing to try operations, then attempt a reconnect
+and try again in the case of mongo errors. Can access the client, db, and collection, but there
+is a check each time to see if the client is connected. Useful for exactly nobody but me, I
+rather suspect.
 
 ## Contributing
 
